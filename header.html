@@ -1,0 +1,55 @@
+
+<header class="header-4" id="page-header">
+<div class="container header-4-nav-holder">
+<div class="row middle-align">
+<!-- Left: Logo -->
+<div class="col-xs-3 col-sm-2">
+<a class="header-4-logo" href="#">
+<img alt="Infine" class="img-responsive" src="assets/images/header-4-logo.png"/>
+</a>
+</div>
+<!-- Center: Navigation -->
+<div class="collapse navbar-collapse" id="dynamic-header"><ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato"><li><a href="index.html">Home</a></li><li><a href="About Us.html">About Us</a></li><li><a href="Services.html">Services</a></li><li><a href="Blog.html">Blog</a></li><li><a href="Contact Us.html">Contact Us</a></li></ul></div>
+<!-- Right: CTA Button -->
+<div class="col-xs-3 col-sm-2 text-right">
+<a class="header-4-btn-cta" href="#">Join</a>
+</div>
+</div>
+</div>
+</header>
+<!-- ░░ HERO ░░ -->
+<section class="header-4-hero main-header-section" style='background: url("https://dev.turnr.co.in/assets/images/header-4-bg.jpg") center center / cover no-repeat;'>
+<img alt="School Teacher" class="header-4-coach-img img-responsive" src="assets/images/coach.png"/>
+<div class="container header-4-hero-content">
+<p class="header-4-tagline">WELCOME TO Schola SCHOOL.</p>
+<h1 class="header-4-title">Empower your child with<br/><span class="header-4-highlight">quality education</span>
+</h1>
+<p class="header-4-sub">
+			We provide a nurturing environment where students grow academically, socially, and emotionally.<br/>
+			Inspire curiosity. Foster learning. Start the journey today.
+		</p>
+<a class="header-4-btn-primary" href="#">Enroll Now <i class="ri-arrow-right-line"></i></a>
+<a class="header-4-btn-secondary" href="#">Learn More <i class="ri-arrow-right-line"></i></a>
+</div>
+</section>
+<!-- ░░ Sticky Script ░░ -->
+<script>
+	$(function () {
+		var $header = $('#page-header'),
+			heroH = $('.header-4-hero').outerHeight();
+
+		$(window).on('scroll', function () {
+			$(this).scrollTop() >= heroH ?
+				$header.addClass('header-4--sticky') :
+				$header.removeClass('header-4--sticky');
+		});
+	});
+</script>
+<section class="header-breadcrumb-section" style='background: url("https://dev.turnr.co.in/assets/images/header-breadcrumb-section-bg.jpg") center center / cover no-repeat;'>
+<div class="container text-center">
+<h1 class="header-breadcrumb-section-title"><span class="Page_name">Page Name</span></h1>
+<p class="header-breadcrumb-section-breadcrumb">
+<a href="index.html">Home</a> &gt; <span class="Page_name">Page Name</span>
+</p>
+</div>
+</section>
